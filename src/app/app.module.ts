@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SkillsCertificatesComponent } from './skills-certificates/skills-certificates.component';
 import { ResumeComponent } from './resume/resume.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CarouselModule } from './carousel/carousel.module';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ContactComponent,
     SkillsCertificatesComponent,
     ResumeComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, CarouselModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

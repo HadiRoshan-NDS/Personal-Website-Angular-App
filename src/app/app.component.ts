@@ -8,4 +8,23 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'pw-app';
+
+  images = [
+    {
+      imageSrc: 'assets/img/codingCyrus.jpeg',
+      imageAlt: 'Cyrus coding on a mac',
+    },
+    {
+      imageSrc: 'assets/img/ielts-trf.png',
+      imageAlt: 'IELTS TRF',
+    },
+    {
+      imageSrc: 'assets/img/ITTCNoFrameCS.jpg',
+      imageAlt: 'ITTC Certificate',
+    },
+    {
+      imageSrc: 'assets/img/networkplus.png',
+      imageAlt: 'Netplus Certificate',
+    },
+  ];
 }
