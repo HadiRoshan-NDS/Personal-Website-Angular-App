@@ -1,0 +1,53 @@
+.progress-container {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 70vh;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 100;
+
+  .progress-bar {
+    position: absolute;
+    width: 100%;
+    background: white;
+    top: 0;
+    left: 0;
+    transition: height 0.1s ease-out;
+  }
+
+  .progress-dots {
+    position: absolute;
+    right: -15px; // Increased to accommodate star size
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .star-container {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      transition: all 0.3s;
+
+      .star-icon {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.5);
+        transition: all 0.3s;
+
+        &.active,
+        &:hover {
+          color: rgb(255, 255, 255);
+          transform: scale(1.5);
+          text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+}

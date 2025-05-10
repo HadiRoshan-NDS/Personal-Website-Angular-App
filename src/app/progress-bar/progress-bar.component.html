@@ -1,0 +1,15 @@
+<div class="progress-container">
+  <div class="progress-bar" #progressBar></div>
+  <div class="progress-dots">
+    <div
+      *ngFor="let section of sections"
+      class="star-container"
+      (click)="scrollTo(section.id)"
+    >
+      <i
+        class="fas fa-star star-icon"
+        [class.active]="section.id === activeSection"
+      ></i>
+    </div>
+  </div>
+</div>

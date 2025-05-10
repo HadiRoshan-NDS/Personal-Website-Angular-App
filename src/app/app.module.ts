@@ -10,6 +10,7 @@ import { SkillsCertificatesComponent } from './skills-certificates/skills-certif
 import { ResumeComponent } from './resume/resume.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselModule } from './carousel/carousel.module';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CarouselModule } from './carousel/carousel.module';
     SkillsCertificatesComponent,
     ResumeComponent,
     NotFoundComponent,
+    ProgressBarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CarouselModule],
   providers: [],

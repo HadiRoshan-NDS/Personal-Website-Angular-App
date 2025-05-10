@@ -1,0 +1,88 @@
+.nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar stays above other content */
+  background: rgb(0, 0, 0); /* Optional: Semi-transparent background */
+  padding: 1rem 0;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-item {
+  display: inline;
+  padding: 0px 30px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+  position: relative;
+
+  &:hover {
+    color: #a64ff7; /* Light blue hover color */
+  }
+
+  /* Underline animation on hover */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #a64ff7;
+    transition: width 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+#home {
+  width: 1920px;
+  height: 1080px;
+}
+#about {
+  width: 1920px;
+  height: 1080px;
+}
+#contact {
+  width: 1920px;
+  height: 1080px;
+}
+#skills-certificates {
+  width: 1920px;
+  height: 1080px;
+}
+#resume {
+  width: 1920px;
+  height: 1080px;
+}
+
+body {
+  padding-top: 70px; /* Match navbar height (adjust based on your navbar's height) */
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.main-header {
+  color: white;
+  font-size: 50px;
+  font-weight: 100;
+  margin-top: 450px;
+}

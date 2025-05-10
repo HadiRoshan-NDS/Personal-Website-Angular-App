@@ -75,9 +75,48 @@
   <span>Welcome</span>
   <div class="spacer"></div>
 </div> -->
-<app-carousel
-  [images]="images"
-  [autoSlide]="true"
-  [slideInterval]="5000"
-></app-carousel>
+
+<header class="nav-header">
+  <nav class="nav bd-grid">
+    <div class="nav-menu" id="nav-menu">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item">
+          <a href="#skills-certificates" class="nav-link"
+            >Skills and Certificates</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#resume" class="nav-link">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <section id="home">
+    Home Content
+    <h1 class="main-header">
+      Front-End <br />
+      Developer
+    </h1>
+  </section>
+  <section id="about">About Content</section>
+  <section id="skills-certificates">
+    Skills and Certificates Content<br />
+    <app-carousel
+      [images]="images"
+      [autoSlide]="true"
+      [slideInterval]="5000"
+    ></app-carousel>
+  </section>
+  <section id="resume">Resume Content</section>
+  <section id="contact">Contact Content</section>
+</body>
+<app-progress-bar></app-progress-bar>
 <!-- <router-outlet></router-outlet> -->
