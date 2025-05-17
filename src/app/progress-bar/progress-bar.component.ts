@@ -11,9 +11,9 @@ export class ProgressBarComponent {
   sections = [
     { id: 'home', name: 'Home' },
     { id: 'about', name: 'About' },
-    { id: 'contact', name: 'Contact' },
     { id: 'skills-certificates', name: 'Skills and Certificates' },
     { id: 'resume', name: 'Resume' },
+    { id: 'contact', name: 'Contact' },
   ];
   activeSection: string = this.sections[0].id;
 
